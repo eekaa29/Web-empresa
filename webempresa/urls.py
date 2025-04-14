@@ -20,13 +20,17 @@ from django.urls import path, include
 from core import urls
 from django.conf import settings
 from services import urls 
+from blog import urls 
 urlpatterns = [
     #Paths admin
     path('admin/', admin.site.urls),
+    #Path blogs
+    path('blog/', include('blog.urls')),
     #Paths core
     path('', include('core.urls')),
     #Path services
-    path('services/', include('services.urls'))
+    path('services/', include('services.urls')),
+
     
 ]
 
