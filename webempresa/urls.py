@@ -30,7 +30,8 @@ urlpatterns = [
     path('', include('core.urls')),
     #Path services
     path('services/', include('services.urls')),
-
+    #Path pages
+    path('page/', include('pages.urls')),
     
 ]
 
