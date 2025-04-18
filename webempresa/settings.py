@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'django_ckeditor_5',
     "blog",
     "core",
+    "contact",
     "services.apps.ServicesConfig",
     "social.apps.SocialConfig",
     "pages.apps.PagesConfig",
@@ -232,3 +233,10 @@ CKEDITOR_5_CONFIGS = {
 
 # Define a constant in settings.py to specify file upload permissions
 CKEDITOR_5_FILE_UPLOAD_PERMISSION = "authenticated"  # Possible values: "staff", "authenticated", "any"
+
+
+#Mailtrap.io config
+EMAIL_HOST = 'sandbox.smtp.mailtrap.io'
+EMAIL_HOST_USER = '3665fe3bbc38c9'
+EMAIL_HOST_PASSWORD = 'db224de0b0e5cf'
+EMAIL_PORT = '2525'

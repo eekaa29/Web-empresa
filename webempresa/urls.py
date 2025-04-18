@@ -32,6 +32,8 @@ urlpatterns = [
     path('services/', include('services.urls')),
     #Path pages
     path('page/', include('pages.urls')),
+    #Path contact
+    path('contact/', include('contact.urls')),
 ]
 
 if settings.DEBUG:
